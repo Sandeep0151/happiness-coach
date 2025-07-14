@@ -8,19 +8,19 @@ const slides = [
   {
     title: (
   <>
-    An Exclusive Retreat: <br />
+    An Exclusive Workshop: <br />
     Awaken the Purpose Within
   </>
 ),
     subtitle: "Powerful live event to help you break through what's holding you back and create lasting change in your career, health and relationships.",
     cta: "Register Now",
-    bgImage: "/images/speaker-big-stage.jpg",
+    bgImage: "/images/banner-1.png",
   },
   {
     title: "You are just 7-days away from Lasting Happiness",
     subtitle: "Our free resource, with daily activities that actually work, Seven days of simple, powerful practices to reset you happiness.",
     cta: "Download Now",
-    bgImage: "/images/banner.png",
+    bgImage: "/images/banner-2.jpg",
   },
 
 ]
@@ -44,7 +44,7 @@ export default function HeroSlider() {
   }
 
   return (
-    <section className="relative h-[600px] overflow-hidden">
+    <section className="relative h-[700px] overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000"

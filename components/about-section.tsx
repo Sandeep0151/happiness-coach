@@ -14,10 +14,7 @@ export default function AboutSection() {
               height={400}
               className="rounded-lg shadow-lg"
             />
-            <div className="absolute -bottom-6 -right-6 bg-[#191970] text-white p-6 rounded-lg shadow-lg">
-              <div className="text-3xl font-bold">10+</div>
-              <div className="text-sm">Years Experience</div>
-            </div>
+            
           </div>
 
           <div>
