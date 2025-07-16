@@ -19,7 +19,7 @@ export default function AboutSection() {
 
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              About Your <span className="text-[#191970]">Happiness Coach</span>
+              <span className="text-[#1d1f23]">About Your Happiness Coach</span>
             </h2>
             <p className="text-lg text-gray-600 mb-6">
               Welcome! I'm dedicated to helping individuals discover their path to genuine happiness and fulfillment.

@@ -4,6 +4,17 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { Roboto, Playfair_Display  } from 'next/font/google'
+
+const roboto = Roboto({
+  weight: '800',
+  subsets: ['latin'],
+})
+
+const playfair = Playfair_Display({
+  weight: '600',
+  subsets: ['latin'],
+})
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +22,7 @@ export default function Navigation() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Mission", href: "/about" },
-    { name: "Retreats", href: "/services" },
+    { name: "Workshops", href: "/services" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ]
@@ -21,8 +32,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-[#191970]">
-              Andrew Dietz
+            <Link href="/" className={`text-2xl font-bold text-[#191970] ${playfair.className}`}>
+                Andrew Dietz
             </Link>
           </div>
 

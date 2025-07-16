@@ -8,7 +8,6 @@ const quotes = [
     text: "I’m not here to fix you. I’m here to help you meet yourself more fully; past, present, and future.",
     author: "Andrew Dietz",
   },
-
 ]
 
 export default function MotivationalQuotes() {
@@ -30,25 +29,25 @@ export default function MotivationalQuotes() {
   }
 
   return (
-    <section className="py-16 bg-gradient-to-r from-[#191970] to-[#2a2a8a]">
+    <section className="py-16 bg-[#f3f4f6]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-white mb-12">Words of Inspiration</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-12">Words of Inspiration</h2>
 
-          <div className="relative bg-white rounded-lg p-8 shadow-lg">
-            <Quote className="absolute top-4 left-4 text-[#3b5998] opacity-20" size={40} />
+          <div className="relative bg-white rounded-2xl p-8 shadow-md border border-gray-200">
+            <Quote className="absolute top-4 left-4 text-gray-300" size={40} />
 
             <div className="min-h-[120px] flex items-center justify-center">
               <div className="text-center">
-                <p className="text-xl md:text-2xl text-gray-800 font-medium mb-4 italic">
+                <p className="text-xl md:text-2xl text-gray-700 font-medium mb-4 italic">
                   "{quotes[currentQuote].text}"
                 </p>
-                <p className="text-[#3b5998] font-semibold">— {quotes[currentQuote].author}</p>
+                <p className="text-gray-500 font-semibold">— {quotes[currentQuote].author}</p>
               </div>
             </div>
 
             <div className="flex justify-between items-center mt-6">
-              <button onClick={prevQuote} className="text-[#191970] hover:text-[#0f0f4d] transition-colors">
+              <button onClick={prevQuote} className="text-gray-500 hover:text-gray-700 transition-colors">
                 <ChevronLeft size={24} />
               </button>
 
@@ -57,14 +56,14 @@ export default function MotivationalQuotes() {
                   <button
                     key={index}
                     onClick={() => setCurrentQuote(index)}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      index === currentQuote ? "bg-[#191970]" : "bg-gray-300"
+                    className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                      index === currentQuote ? "bg-gray-700" : "bg-gray-300"
                     }`}
                   />
                 ))}
               </div>
 
-              <button onClick={nextQuote} className="text-[#191970] hover:text-[#0f0f4d] transition-colors">
+              <button onClick={nextQuote} className="text-gray-500 hover:text-gray-700 transition-colors">
                 <ChevronRight size={24} />
               </button>
             </div>

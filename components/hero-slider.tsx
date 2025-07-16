@@ -6,19 +6,37 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
-    title: (
-  <>
-    An Exclusive Workshop: <br />
-    Awaken the Purpose Within
-  </>
-),
-    subtitle: "Powerful live event to help you break through what's holding you back and create lasting change in your career, health and relationships.",
+
+  title: (
+    <div className="text-white text-center">
+      <div className="text-xl md:text-2xl tracking-[0.3em] uppercase font-medium mb-2">
+        ANDREW DIETZ
+      </div>
+      <div className="text-6xl md:text-8xl font-extrabold uppercase leading-tight">
+        AWAKEN
+      </div>
+      <div className="text-xl md:text-2xl tracking-widest uppercase mt-2 mb-2">
+        THE ENERGY
+      </div>
+      <div className="text-6xl md:text-8xl font-extrabold uppercase leading-tight">
+        WITHIN
+      </div>
+      
+    </div>
+    ),
+    subtitle: "",
     cta: "Register Now",
     bgImage: "/images/banner-1.png",
   },
   {
-    title: "You are just 7-days away from Lasting Happiness",
-    subtitle: "Our free resource, with daily activities that actually work, Seven days of simple, powerful practices to reset you happiness.",
+    title: (<h2 className="text-4xl md:text-6xl font-bold leading-tight">
+        You are just 7-days away from Lasting Happiness
+      </h2>),
+    subtitle: (
+      <p className="text-xl md:text-2xl mt-4 opacity-90 max-w-3xl mx-auto">
+        Our free resource, with daily activities that actually work. Seven days of simple, powerful practices to reset your happiness.
+      </p>
+    ),
     cta: "Download Now",
     bgImage: "/images/banner-2.jpg",
   },
@@ -53,24 +71,23 @@ export default function HeroSlider() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#191970]/50 to-[#191970]/20"></div>
 
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-white/20"></div>
-        <div className="absolute bottom-20 right-20 w-24 h-24 rounded-full bg-white/15"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 rounded-full bg-white/10"></div>
-      </div>
+      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 w-full max-w-5xl px-4 text-center text-white">
+  <div>{slides[currentSlide].title}</div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="text-center text-white max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">{slides[currentSlide].title}</h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">{slides[currentSlide].subtitle}</p>
-          <Button
-            size="lg"
-            className="bg-white text-[#3b5998] hover:bg-gray-100 text-lg px-8 py-3 rounded-full font-semibold"
-          >
-            {slides[currentSlide].cta}
-          </Button>
-        </div>
-      </div>
+  {slides[currentSlide].subtitle && (
+    <p className="text-xl md:text-2xl mt-4 mb-6 opacity-90 max-w-3xl mx-auto">
+      {slides[currentSlide].subtitle}
+    </p>
+  )}
+
+  <Button
+    size="lg"
+    className="bg-white text-[#3b5998] hover:bg-gray-100 text-lg px-8 py-3 rounded-full font-semibold"
+  >
+    {slides[currentSlide].cta}
+  </Button>
+</div>
+
 
       {/* Navigation Arrows */}
       <button
