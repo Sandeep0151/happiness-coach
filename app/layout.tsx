@@ -5,6 +5,7 @@ import "./globals.css"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 
+<meta name="google-site-verification" content="6L82PwHefkzhG8rPtJ61jc9tQHuorq7FVQ-h-K_eBXI" />
 const inter = Inter({ subsets: ["latin"] })
 const roboto = Roboto({
   weight: '400',
