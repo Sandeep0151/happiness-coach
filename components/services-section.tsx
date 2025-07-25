@@ -14,7 +14,7 @@ const services = [
     title: "Private Consulting",
     description:
       "Build your next chapter with purpose and clarity.",
-    image: "/images/service-2.jpg",
+    image: "/images/service-2.png",
 
   },
   {
