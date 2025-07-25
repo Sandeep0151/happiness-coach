@@ -7,7 +7,7 @@ const services = [
     title: "Small Group Workshops",
     description:
       "Curated spaces for reflection, recalibration, and connection.",
-    image: "/images/service-1.jpg",
+    image: "/images/service.jpg",
 
   },
   {
@@ -35,7 +35,7 @@ export default function ServicesSection() {
             Here’s what <span className="text-[#191970]">we offer</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose the path that best fits your journey to happiness. Each service is designed to provide you with the
+            Choose the path that best fits your journey to freedom. Each service is designed to provide you with the
             tools and support you need to create lasting positive change.
           </p>
         </div>

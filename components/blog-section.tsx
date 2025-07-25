@@ -10,7 +10,7 @@ const blogPosts = [
     excerpt:
       "Awaken the Purpose Within: Why High Achievers Are Seeking Something More.",
     image: "/placeholder.svg?height=200&width=300",
-    date: "June 15, 2025",
+    date: "May 15, 2025",
     slug: "awaken-the-purpose",
   },
   {
@@ -18,14 +18,14 @@ const blogPosts = [
     excerpt:
       "The Hidden Cost of Success: What You’re Missing While Winning.",
     image: "/placeholder.svg?height=200&width=300",
-    date: "May 10, 2025",
+    date: "June 5, 2025",
     slug: "the-hidden-cost-of-success",
   },
   {
     title: "The Art of Inner Wealth",
     excerpt: "The Art of Inner Wealth: How Emotional Clarity Leads to Better Leadership.",
     image: "/placeholder.svg?height=200&width=300",
-    date: "April 5, 2025",
+    date: "July 10, 2025",
     slug: "the-art-of-inner-Wealth",
   },
 ]

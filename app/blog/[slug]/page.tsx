@@ -88,8 +88,8 @@ const blogPosts = {
       <p>Apply now or request a private invite. This is your next chapter. Let’s make it count</p>
     `,
     image: "/placeholder.svg?height=400&width=800&text=Happy+Morning+Routine",
-    author: "Dr. Sarah Johnson",
-    date: "December 15, 2024",
+    author: "Andrew Dietz",
+    date: "May 15, 2025",
     readTime: "8 min read",
     tags: ["Happiness", "Daily Habits", "Mindfulness", "Well-being"],
     likes: 127,
@@ -232,8 +232,8 @@ const blogPosts = {
       <p>Because what’s the point of success if you’re not there to enjoy it?</p>
     `,
     image: "/placeholder.svg?height=400&width=800&text=Mountain+Climbing+Resilience",
-    author: "Dr. Sarah Johnson",
-    date: "December 5, 2024",
+    author: "Andrew Dietz",
+    date: "June 5, 2025",
     readTime: "12 min read",
     tags: ["Resilience", "Personal Growth", "Mental Health", "Coping Strategies"],
     likes: 156,
@@ -384,8 +384,8 @@ const blogPosts = {
       </p>
     `,
     image: "/placeholder.svg?height=400&width=800&text=Mountain+Climbing+Resilience",
-    author: "Dr. Sarah Johnson",
-    date: "December 5, 2024",
+    author: "Andrew Dietz",
+    date: "July 10, 2025",
     readTime: "12 min read",
     tags: ["Resilience", "Personal Growth", "Mental Health", "Coping Strategies"],
     likes: 156,
@@ -477,27 +477,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               </div>
 
-              {/* Author Bio */}
-              <div className="mt-12 p-6 bg-gray-50 rounded-lg">
-                <div className="flex items-start space-x-4">
-                  <Image
-                    src="/placeholder.svg?height=80&width=80"
-                    alt={post.author}
-                    width={80}
-                    height={80}
-                    className="rounded-full"
-                  />
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{post.author}</h3>
-                    <p className="text-gray-600 mb-4">
-                      Dr. Sarah Johnson is a certified happiness coach with over 10 years of experience helping
-                      individuals discover their path to lasting joy and fulfillment. She holds a Ph.D. in Positive
-                      Psychology and has worked with thousands of clients worldwide.
-                    </p>
-                    <Button className="bg-[#191970] hover:bg-[#0f0f4d] text-white">View All Posts</Button>
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             {/* Sidebar */}

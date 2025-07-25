@@ -9,24 +9,24 @@ const slides = [
 
   title: (
     <div className="text-white text-center">
-      <div className="text-xl md:text-2xl tracking-[0.3em] uppercase font-medium mb-2">
+      <div className="text-xl md:text-2xl tracking-[0.4em] uppercase font-medium mb-2">
         ANDREW DIETZ
       </div>
       <div className="text-6xl md:text-8xl font-extrabold uppercase leading-tight">
         AWAKEN
       </div>
       <div className="text-xl md:text-2xl tracking-widest uppercase mt-2 mb-2">
-        THE ENERGY
+        YOUR PURPOSE
       </div>
       <div className="text-6xl md:text-8xl font-extrabold uppercase leading-tight">
         WITHIN
       </div>
-      
+      <br></br>
     </div>
     ),
     subtitle: "",
     cta: "Register Now",
-    bgImage: "/images/banner-1.png",
+    bgImage: "/images/speaker-big-stage.jpg",
   },
   {
     title: (<h2 className="text-4xl md:text-6xl font-bold leading-tight">

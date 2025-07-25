@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 
 const quotes = [
   {
-    text: "I’m not here to fix you. I’m here to help you meet yourself more fully; past, present, and future.",
+    text: "I’m not here to fix you. I’m here to help you meet your authentic self.",
     author: "Andrew Dietz",
   },
 ]

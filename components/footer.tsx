@@ -8,10 +8,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">HappinessCoach</h3>
+            <h3 className="text-2xl font-bold mb-4">Andrew Dietz</h3>
             <p className="text-blue-100 mb-4">
-              Empowering individuals to discover their path to genuine happiness and fulfillment through proven coaching
-              methods and supportive community.
+              Andrew Dietz is an accomplished entrepreneur, author, financial advisor, researcher, and lecturer who is empowering individuals to discover their path to genuine happiness through proven methods and supportive community.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-blue-200 hover:text-white transition-colors">
@@ -94,11 +93,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Mail size={16} className="mr-3 text-blue-200" />
-                <span className="text-blue-100">hello@happinesscoach.com</span>
+                <span className="text-blue-100">andrewdietzcoach@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <Phone size={16} className="mr-3 text-blue-200" />
-                <span className="text-blue-100">+1 (555) 123-4567</span>
+                <span className="text-blue-100">+1 (410) 913-0048</span>
               </div>
               <div className="flex items-center">
                 <MapPin size={16} className="mr-3 text-blue-200" />
@@ -110,7 +109,7 @@ export default function Footer() {
 
         <div className="border-t border-blue-400 mt-8 pt-8 text-center">
           <p className="text-blue-100">
-            © {new Date().getFullYear()} HappinessCoach. All rights reserved. |
+            © {new Date().getFullYear()} Andrew Dietz. All rights reserved. |
             <Link href="/privacy" className="hover:text-white ml-2">
               Privacy Policy
             </Link>{" "}

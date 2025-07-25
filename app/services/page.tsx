@@ -3,16 +3,9 @@ import { Button } from "@/components/ui/button"
 
 export default function ServicesPage() {
   return (
-    <main className="pt-16">
+    <main className="">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-[#191970] to-[#2a2a8a] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Choose the path that best fits your journey to happiness and personal growth
-          </p>
-        </div>
-      </section>
+      
 
       <ServicesSection />
 

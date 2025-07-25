@@ -8,9 +8,9 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src="/images/andrew.jpg"
+              src="/images/andrew-1.jpg"
               alt="Happiness Coach"
-              width={300}
+              width={200}
               height={400}
               className="rounded-lg shadow-lg"
             />
@@ -18,27 +18,36 @@ export default function AboutSection() {
           </div>
 
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              <span className="text-[#1d1f23]">About Your Happiness Coach</span>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <span className="text-[#1d1f23]">Awaken Your Purpose Within</span>
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Welcome! I'm dedicated to helping individuals discover their path to genuine happiness and fulfillment.
-              With over a decade of experience in personal development and positive psychology, I've had the privilege
-              of guiding thousands of people toward more joyful, meaningful lives.
+            <p className=" text-gray-600 mb-6">
+              Awaken the Power Within is a transformational experience designed to help you uncover and release
+the hidden patterns holding you back.
             </p>
-            <p className="text-lg text-gray-600 mb-6">
-              My approach combines proven scientific methods with practical, real-world applications. Whether you're
-              facing life transitions, seeking greater purpose, or simply wanting to enhance your overall well-being,
-              I'm here to support your journey.
+
+            <h3 className="text-xl font-bold text-gray-900 mb-6">
+              What are we going to talk about?
+            </h3>
+
+           <p className="text-gray-600 mb-6">
+             It combines powerful psychological insights, breakthrough coaching strategies, and immersive
+exercises to build unstoppable momentum, and create lasting change in your life.
+            </p>
+
+            <p className="text-xl font-bold text-gray-900 mb-6">
+             What are they going to get out of it?
+            </p>
+
+
+            <p className=" text-gray-600 mb-6">
+             Whether you want to achieve greater success in your career, improve your health and relationships,
+or find deeper purpose and fulfillment, this event will guide you to tap into the power already within
+you and live the life you’ve always envisioned.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-[#191970] hover:bg-[#2d4373] text-white">Learn More About Me</Button>
-              <Button
-                variant="outline"
-                className="border-[#191970] text-[#191970] hover:bg-[#191970] hover:text-white bg-transparent"
-              >
-                View Credentials
-              </Button>
+              <Button className="bg-[#191970] hover:bg-[#2d4373] text-white">Learn More</Button>
+              
             </div>
           </div>
         </div>
