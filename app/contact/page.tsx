@@ -6,14 +6,11 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <main className="pt-16">
+    <main className="">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-[#191970] to-[#2a2a8a] text-white">
+      <section className="py-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Ready to start your journey? Get in touch and let's discuss how we can help you
-          </p>
+          <h1 className="text-4xl md:text-6xl text-[#191970] font-bold mb-6">Contact Us</h1>
         </div>
       </section>
 
@@ -92,7 +89,7 @@ export default function ContactPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">hello@happinesscoach.com</p>
+                    <p className="text-gray-600">andrewdietzcoach@gmail.com</p>
                   </CardContent>
                 </Card>
 
@@ -104,7 +101,7 @@ export default function ContactPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+1 (410) 913-0048</p>
                   </CardContent>
                 </Card>
 
@@ -124,32 +121,10 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center text-[#191970]">
-                      <Clock className="mr-3" size={20} />
-                      Office Hours
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM
-                      <br />
-                      Saturday: 10:00 AM - 4:00 PM
-                      <br />
-                      Sunday: Closed
-                    </p>
-                  </CardContent>
-                </Card>
+                
               </div>
 
-              <div className="bg-[#191970] text-white p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Ready to Book?</h3>
-                <p className="mb-4">
-                  Skip the form and book your session directly. We'll get back to you within 24 hours.
-                </p>
-                <Button className="bg-white text-[#191970] hover:bg-gray-100">Book Now</Button>
-              </div>
+              
             </div>
           </div>
         </div>

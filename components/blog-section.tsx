@@ -9,7 +9,7 @@ const blogPosts = [
     title: "Awaken the Purpose Within: Why High Achievers Are Seeking Something More",
     excerpt:
       "Awaken the Purpose Within: Why High Achievers Are Seeking Something More.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/speaker-big-stage.jpg?height=200&width=300",
     date: "May 15, 2025",
     slug: "awaken-the-purpose",
   },
@@ -17,14 +17,14 @@ const blogPosts = [
     title: "The Hidden Cost of Success",
     excerpt:
       "The Hidden Cost of Success: What You’re Missing While Winning.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/blog-2.jpg?height=200&width=300",
     date: "June 5, 2025",
     slug: "the-hidden-cost-of-success",
   },
   {
     title: "The Art of Inner Wealth",
     excerpt: "The Art of Inner Wealth: How Emotional Clarity Leads to Better Leadership.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/blog-3.jpg?height=200&width=300",
     date: "July 10, 2025",
     slug: "the-art-of-inner-Wealth",
   },
@@ -36,7 +36,7 @@ export default function BlogSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Latest from Our <span className="text-[#3b5998]">Blog</span>
+            Latest from Our <span className="text-[#191970]">Blog</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Stay updated with the latest insights, tips, and strategies for living a happier, more fulfilling life.

@@ -87,7 +87,7 @@ const blogPosts = {
       <br/>
       <p>Apply now or request a private invite. This is your next chapter. Let’s make it count</p>
     `,
-    image: "/placeholder.svg?height=400&width=800&text=Happy+Morning+Routine",
+    image: "/images/speaker-big-stage.jpg?height=400&width=800&text=Happy+Morning+Routine",
     author: "Andrew Dietz",
     date: "May 15, 2025",
     readTime: "8 min read",
@@ -231,7 +231,7 @@ const blogPosts = {
 
       <p>Because what’s the point of success if you’re not there to enjoy it?</p>
     `,
-    image: "/placeholder.svg?height=400&width=800&text=Mountain+Climbing+Resilience",
+    image: "/images/blog-2.jpg?height=400&width=800&text=Mountain+Climbing+Resilience",
     author: "Andrew Dietz",
     date: "June 5, 2025",
     readTime: "12 min read",
@@ -383,7 +383,7 @@ const blogPosts = {
         happening inside you.
       </p>
     `,
-    image: "/placeholder.svg?height=400&width=800&text=Mountain+Climbing+Resilience",
+    image: "/images/blog-3.jpg?height=400&width=800&text=Mountain+Climbing+Resilience",
     author: "Andrew Dietz",
     date: "July 10, 2025",
     readTime: "12 min read",
@@ -406,45 +406,40 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <main className="pt-16">
+    <main className="">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-[#191970] to-[#2a2a8a] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/blog" className="inline-flex items-center text-blue-200 hover:text-white mb-6 transition-colors">
-            <ArrowLeft size={20} className="mr-2" />
-            Back to Blog
-          </Link>
+      <section
+  className="relative py-24 text-white bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: `url(${post.image})` }}
+>
+  <div className="absolute inset-0 bg-black/50" />
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <Link
+      href="/blog"
+      className="inline-flex items-center text-blue-200 hover:text-white mb-6 transition-colors"
+    >
+      <ArrowLeft size={20} className="mr-2" />
+      Back to Blog
+    </Link>
 
-          <div className="flex flex-wrap gap-2 mb-4">
-            {post.tags.map((tag) => (
-              <span key={tag} className="bg-white/20 text-white px-3 py-1 rounded-full text-sm">
-                {tag}
-              </span>
-            ))}
-          </div>
+    <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">{post.title}</h1>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">{post.title}</h1>
+    <div className="flex flex-wrap items-center gap-6 text-blue-200">
+      <div className="flex items-center">
+        <User size={16} className="mr-2" />
+        {post.author}
+      </div>
+      <div className="flex items-center">
+        <Calendar size={16} className="mr-2" />
+        {post.date}
+      </div>
+      <div>{post.readTime}</div>
+    </div>
+  </div>
+</section>
 
-          <div className="flex flex-wrap items-center gap-6 text-blue-200">
-            <div className="flex items-center">
-              <User size={16} className="mr-2" />
-              {post.author}
-            </div>
-            <div className="flex items-center">
-              <Calendar size={16} className="mr-2" />
-              {post.date}
-            </div>
-            <div>{post.readTime}</div>
-          </div>
-        </div>
-      </section>
 
-      {/* Featured Image */}
-      <section className="relative">
-        <div className="relative h-96 w-full">
-          <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
-        </div>
-      </section>
+      
 
       {/* Article Content */}
       <article className="py-16 bg-white">
@@ -487,7 +482,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <div className="bg-[#191970] text-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-4">Ready to Transform Your Life?</h3>
                   <p className="mb-4 text-blue-100">
-                    Join our next webinar and discover personalized strategies for lasting happiness.
+                    Awaken your Purpose Within is a transformative experience for high-achieving professionals who want to redefine success, wealth and relationships.
                   </p>
                   <Button className="w-full bg-white text-[#191970] hover:bg-gray-100">Book Your Seat</Button>
                 </div>
@@ -512,21 +507,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   </div>
                 </div>
 
-                {/* Newsletter Signup */}
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Stay Updated</h3>
-                  <p className="text-gray-600 mb-4">
-                    Get the latest insights on happiness and personal growth delivered to your inbox.
-                  </p>
-                  <div className="space-y-3">
-                    <input
-                      type="email"
-                      placeholder="Your email address"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#191970]"
-                    />
-                    <Button className="w-full bg-[#191970] hover:bg-[#0f0f4d] text-white">Subscribe</Button>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>

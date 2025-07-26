@@ -55,8 +55,10 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-[#191970] hover:bg-[#0f0f4d] text-white">Book Now</Button>
-          </div>
+  <Link href="/contact">
+    <Button className="bg-[#191970] hover:bg-[#0f0f4d] text-white">Book Now</Button>
+  </Link>
+</div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -80,7 +82,13 @@ export default function Navigation() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-[#191970] hover:bg-[#0f0f4d] text-white w-full mt-4">Book Now</Button>
+              
+              <Link href="/contact">
+  <Button className="bg-[#191970] hover:bg-[#0f0f4d] text-white w-full mt-4" onClick={() => setIsOpen(false)}>
+    Book Now
+  </Button>
+</Link>
+              
             </div>
           </div>
         )}

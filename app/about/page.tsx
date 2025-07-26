@@ -8,10 +8,10 @@ export default function AboutPage() {
   return (
     <main className="pt-16">    
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
+            <div className="order-2 lg:order-1">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Meet Andrew</h2>
               <p className="text-lg text-black-600 mb-6">
                 Andrew Dietz is an accomplished entrepreneur, author, financial advisor, researcher, and lecturer, whose research has led him to develop a formula that helps individuals reach an elevated existence of happiness and transform their lives. 
