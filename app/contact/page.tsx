@@ -22,7 +22,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
               <iframe
     src="https://api.leadconnectorhq.com/widget/form/wayxTO6ZaPuxelgpiEbr"
-    style="width:100%;height:100%;border:none;border-radius:3px"
+    style={{width: "100%", height: "100%", border: "none"}}
     id="inline-wayxTO6ZaPuxelgpiEbr" 
     data-layout="{'id':'INLINE'}"
     data-trigger-type="alwaysShow"
