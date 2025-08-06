@@ -8,7 +8,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src="/images/andrew-1.jpg"
+              src="https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2cd69f990d59d4ef52.jpeg"
               alt="Happiness Coach"
               width={200}
               height={400}

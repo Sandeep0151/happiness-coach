@@ -87,7 +87,7 @@ const blogPosts = {
       <br/>
       <p>Apply now or request a private invite. This is your next chapter. Let’s make it count</p>
     `,
-    image: "/images/speaker-big-stage.jpg?height=400&width=800&text=Happy+Morning+Routine",
+    image: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2cd69f9923d1d4ef53.jpeg?height=400&width=800&text=Happy+Morning+Routine",
     author: "Andrew Dietz",
     date: "May 15, 2025",
     readTime: "8 min read",
@@ -231,7 +231,7 @@ const blogPosts = {
 
       <p>Because what’s the point of success if you’re not there to enjoy it?</p>
     `,
-    image: "/images/blog-2.jpg?height=400&width=800&text=Mountain+Climbing+Resilience",
+    image: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2cf8ddde086e0f1511.jpeg?height=400&width=800&text=Mountain+Climbing+Resilience",
     author: "Andrew Dietz",
     date: "June 5, 2025",
     readTime: "12 min read",
@@ -383,7 +383,7 @@ const blogPosts = {
         happening inside you.
       </p>
     `,
-    image: "/images/blog-3.jpg?height=400&width=800&text=Mountain+Climbing+Resilience",
+    image: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2cf8ddde66c30f150f.jpeg?height=400&width=800&text=Mountain+Climbing+Resilience",
     author: "Andrew Dietz",
     date: "July 10, 2025",
     readTime: "12 min read",

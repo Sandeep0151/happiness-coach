@@ -27,7 +27,7 @@ export default function AboutPage() {
             </div>
             <div className="relative pt-7">
               <Image
-                src="/images/andrew-about.jpg"
+                src="https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2ced9c8f14e4896a37.jpeg"
                 alt="Coach in action"
                 width={520}
                 height={400}

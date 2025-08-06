@@ -26,7 +26,7 @@ const slides = [
     ),
     subtitle: "",
     cta: "Register Now",
-    bgImage: "/images/speaker-big-stage.jpg",
+    bgImage: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68932da7d8d33817c65f0af4.jpeg",
   },
   {
     title: (<h2 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -38,7 +38,7 @@ const slides = [
       </p>
     ),
     cta: "Download Now",
-    bgImage: "/images/banner-2.jpg",
+    bgImage: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2ceedaf82662bf37bb.jpeg",
   },
 
 ]

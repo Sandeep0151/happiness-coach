@@ -7,21 +7,21 @@ const services = [
     title: "Small Group Workshops",
     description:
       "Curated spaces for reflection, recalibration, and connection.",
-    image: "/images/service.jpg",
+    image: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2cd69f99a4c1d4ef50.jpeg",
 
   },
   {
     title: "Private Consulting",
     description:
       "Build your next chapter with purpose and clarity.",
-    image: "/images/service-2.png",
+    image: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2ced9c8f6ca5896a36.png",
 
   },
   {
     title: "1-on-1 Mentorship",
     description:
       "Strategic, discreet, and deeply personal guidance.",
-    image: "/images/service-3.jpg",
+    image: "https://storage.googleapis.com/msgsndr/xQlIEgJuDpymPFH4Fs60/media/68935f2d5b9f87d7f7918150.jpeg",
 
   },
 ]
