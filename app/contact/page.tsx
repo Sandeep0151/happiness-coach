@@ -1,44 +1,12 @@
-"use client"
-
-import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
-  const [formSubmitted, setFormSubmitted] = useState(false)
-
-useEffect(() => {
-  const handleFormSubmission = (event: MessageEvent) => {
-    if (
-      event.origin.includes("gohighlevel") &&
-      event.data.type === "hsFormCallback" &&
-      event.data.eventName === "onFormSubmitted"
-    ) {
-      setFormSubmitted(true)
-
-      // Optional: Scroll to top of form
-      const section = document.getElementById("ghl-form-section")
-      if (section) section.scrollIntoView({ behavior: "smooth" })
-
-      // 🔁 Refresh page after 5 seconds
-      setTimeout(() => {
-        window.location.reload()
-      }, 5000)
-    }
-  }
-
-  window.addEventListener("message", handleFormSubmission)
-  return () => {
-    window.removeEventListener("message", handleFormSubmission)
-  }
-}, [])
-
-
   return (
-    <main>
+    <main className="">
       {/* Hero Section */}
       <section className="py-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -50,39 +18,27 @@ useEffect(() => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div id="ghl-form-section">
+            <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-
-              {/* Thank You Message */}
-              {formSubmitted && (
-                <div className="bg-green-100 text-green-800 font-medium px-4 py-3 mb-4 rounded">
-                  Thank you! Your message has been successfully submitted.
-                </div>
-              )}
-
-              <div className="w-full h-[750px] overflow-hidden rounded-md shadow-md border">
-                <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/wayxTO6ZaPuxelgpiEbr"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    border: "none",
-                  }}
-                  id="inline-wayxTO6ZaPuxelgpiEbr"
-                  data-layout='{"id":"INLINE"}'
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Form 0"
-                  data-height="750"
-                  data-layout-iframe-id="inline-wayxTO6ZaPuxelgpiEbr"
-                  data-form-id="wayxTO6ZaPuxelgpiEbr"
-                  title="Contact Form"
-                ></iframe>
-              </div>
+              <iframe
+    src="https://api.leadconnectorhq.com/widget/form/wayxTO6ZaPuxelgpiEbr"
+    style="width:100%;height:100%;border:none;border-radius:3px"
+    id="inline-wayxTO6ZaPuxelgpiEbr" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Form 0"
+    data-height="658"
+    data-layout-iframe-id="inline-wayxTO6ZaPuxelgpiEbr"
+    data-form-id="wayxTO6ZaPuxelgpiEbr"
+    title="Form 0"
+        >
+</iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
 
             {/* Contact Information */}
@@ -129,7 +85,11 @@ useEffect(() => {
                     </p>
                   </CardContent>
                 </Card>
+
+                
               </div>
+
+              
             </div>
           </div>
         </div>
