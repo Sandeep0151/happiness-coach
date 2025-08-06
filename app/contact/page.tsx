@@ -20,60 +20,25 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                      First Name
-                    </label>
-                    <Input id="firstName" type="text" required />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                      Last Name
-                    </label>
-                    <Input id="lastName" type="text" required />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <Input id="email" type="email" required />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <Input id="phone" type="tel" />
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                    Service Interest
-                  </label>
-                  <select
-                    id="service"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#191970]"
-                  >
-                    <option value="">Select a service</option>
-                    <option value="coaching">Individual Coaching</option>
-                    <option value="webinar">Group Webinars</option>
-                    <option value="seminar">Weekend Seminars</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message
-                  </label>
-                  <Textarea id="message" rows={5} required />
-                </div>
-
-                <Button className="w-full bg-[#191970] hover:bg-[#0f0f4d] text-white">Send Message</Button>
-              </form>
+              <iframe
+    src="https://api.leadconnectorhq.com/widget/form/wayxTO6ZaPuxelgpiEbr"
+    style="width:100%;height:100%;border:none;border-radius:3px"
+    id="inline-wayxTO6ZaPuxelgpiEbr" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Form 0"
+    data-height="658"
+    data-layout-iframe-id="inline-wayxTO6ZaPuxelgpiEbr"
+    data-form-id="wayxTO6ZaPuxelgpiEbr"
+    title="Form 0"
+        >
+</iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
 
             {/* Contact Information */}
