@@ -1,10 +1,11 @@
 "use client"
 
 import { useState } from "react"
+import AppointmentModal from '@/components/AppointmentModal';
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
-import { Roboto, Playfair_Display  } from 'next/font/google'
+import { Roboto, Playfair_Display } from 'next/font/google'
 
 const roboto = Roboto({
   weight: '800',
@@ -17,6 +18,7 @@ const playfair = Playfair_Display({
 })
 
 export default function Navigation() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
@@ -29,13 +31,16 @@ export default function Navigation() {
     { name: "Contact", href: "/contact" },
   ]
 
+  const handleOpen = () => setIsModalOpen(true);
+  const handleClose = () => setIsModalOpen(false);
+
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/" className={`text-2xl font-bold text-[#191970] ${playfair.className}`}>
-                Andrew Dietz
+              Andrew Dietz
             </Link>
           </div>
 
@@ -55,10 +60,14 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:block">
-  <Link href="/contact">
-    <Button className="bg-[#191970] hover:bg-[#0f0f4d] text-white">Book Now</Button>
-  </Link>
-</div>
+            <Button
+              onClick={handleOpen}
+              className="bg-[#191970] hover:bg-[#0f0f4d] text-white"
+            >
+              Book Appointment
+            </Button>
+
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -82,17 +91,21 @@ export default function Navigation() {
                   {item.name}
                 </Link>
               ))}
-              
-              <Link href="/contact">
-  <Button className="bg-[#191970] hover:bg-[#0f0f4d] text-white w-full mt-4" onClick={() => setIsOpen(false)}>
-    Book Now
-  </Button>
-</Link>
-              
+
+
+              <Button
+                onClick={handleOpen}
+                className="bg-[#191970] hover:bg-[#0f0f4d] text-white"
+              >
+                Book Appointment
+              </Button>
+
+
             </div>
           </div>
         )}
       </div>
+      <AppointmentModal isOpen={isModalOpen} onClose={handleClose} />
     </nav>
   )
 }
